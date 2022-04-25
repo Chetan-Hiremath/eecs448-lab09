@@ -2,8 +2,7 @@
 <html>
 <body>
  <div id="quiz-form">
-        <?php
-            
+        <?php  
             $answer1 = $_POST['question-1-choice'];
             $answer2 = $_POST['question-2-choice'];
             $answer3 = $_POST['question-3-choice'];
@@ -30,7 +29,6 @@
             echo "Your answer: " . $answer5 . "<br>";
             echo "<br>";
             $totalScore = 0;
-            
             if ($answer1 == "Partial Differentiation") 
             { 
                $totalScore++; 
@@ -51,11 +49,10 @@
             { 
                $totalScore++; 
             }     
-            echo "Total right answers: " . $totalScore . "<br>";
+            echo "Total right answers: " . $totalScore . " / 5 <br>";
             $percentageScore =  ($totalScore / 5) * 100;
             echo "Percentage: " . $percentageScore . "% <br>";
         ?>
- 
  </div>
 </body>
 </html>
