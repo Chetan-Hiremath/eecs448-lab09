@@ -37,7 +37,7 @@
             { 
                $totalScore++; 
             }
-            if ($answer3 == "Area of an curve") 
+            if ($answer3 == "Area of a curve") 
             { 
                $totalScore++; 
             }
