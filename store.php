@@ -34,7 +34,7 @@ else if ($option == "3-Day")
   $shippingcost = 5;
 }
 $totalcost = $chairtotal + $televisiontotal + $icecreamtotal + $shippingcost;
-if($chairtotal == 0 && $televisiontoal == 0 && $icecreamtotal == 0)
+if($chairtotal == 0 && $televisiontotal == 0 && $icecreamtotal == 0)
 {
   $shippingcost = 0;
   $totalcost = 0;
