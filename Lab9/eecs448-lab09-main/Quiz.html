@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1> Quiz </h1>
+</head>
+<body>
+<p>This quiz is designed to test students, who know the basic concepts of Calculus 1. Answer the 5 basic questions, submit your answers, and check your answers. You can reset the form if you are not okay with your selected answers.</p>
+<form action="quiz.php" method="post" id = "quiz">
+ <div id="quiz-form">
+                
+                    <h3>Question 1: Which concept is not introduced in Calculus 1?</h3>
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-A" value="Limits" />
+                        <label for="question-1-choice-A">A) Limts </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-B" value="Differentiation" />
+                        <label for="question-1-choice-B">B) Differentiation</label>
+                    </div>                   
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-C" value="Integration" />
+                        <label for="question-1-choice-C">C) Integration</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-D" value="Partial Differentiation" />
+                        <label for="question-1-choice-D">D) Partial Differentiation</label>
+                    </div>
+                    <h3>Question 2: What is the power rule of differentiation?</h3>    
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-A" value="x^(1-x)" />
+                        <label for="question-2-choice-A">A) x^(1-x)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-B" value="xm^(x-1)" />
+                        <label for="question-2-choice-B">B) xm^(x-1)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-C" value="x^(1000-20x)" />
+                        <label for="question-2-choice-C">C) x^(1000-20x)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-D" value="None of the above" />
+                        <label for="question-2-choice-D">D) None of the above</label>
+                    </div>
+                    <h3>Question 3: What is calculated for Integration?</h3>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-A" value="Area of a curve"/>
+                        <label for="question-3-choice-A">A) Area of a curve</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-B" value="Instantaneous rate of change" />
+                        <label for="question-3-choice-B">B) Instantaneous rate of change</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-C" value="Differentiation of numerator and denominator" />
+                        <label for="question-3-choice-C">C) Differentiation of numerator and denominator</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-D" value="Convergence or Divergence" />
+                        <label for="question-3-choice-D">D) Convergence or Divergence</label>
+                    </div>
+                    <h3>Question 4: What is the formula of the Fundamental Theorem of Calculus: Part 2?</h3>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-A" value="F(b-a)" />
+                        <label for="question-4-choice-A">A) F(b-a)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-B" value="F(b)-F(a)" />
+                        <label for="question-4-choice-B">B) F(b)-F(a)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-C" value="F(a)+20" />
+                        <label for="question-4-choice-C">C) F(a)+20</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-D" value="F(100)-F(a)" />
+                        <label for="question-4-choice-D">D) F(100)-F(a)</label>
+                    </div>
+                    <h3>Question 5: Which law is not a law of Limits?</h3>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-A" value="Sum Law" />
+                        <label for="question-5-choice-A">A) Sum Law</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-B" value="Constant Multiple Law" />
+                        <label for="question-5-choice-B">B) Constant Multiple Law</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-C" value="Factorial Law" />
+                        <label for="question-5-choice-C">C) Factorial Law</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-D" value="None of the above" />
+                        <label for="question-5-choice-D">D) None of the above</label>
+                    </div>     
+  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="myFunction2()" value="Reset">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("quiz").submit();
+}
+function myFunction2() {
+  document.getElementById("quiz").reset();
+}
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<title>Lab 9</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Lab 9 </h2>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="Tab('Intro Page')">Intro Page</button>
+  <button class="w3-bar-item w3-button" onclick="Tab('Multiplication Table')">Multiplication Table</button>
+  <button class="w3-bar-item w3-button" onclick="Tab('Quiz')">Quiz</button>
+  <button class="w3-bar-item w3-button" onclick="Tab('Web Store')">Web Store</button>
+</div>
+
+<div id="Intro Page" class="w3-container tab">
+   <h1 style = "text-align: center;"> Intro Page </h1>
+   <title>Intro Page</title>
+   <p style = "text-align: center;"> Hello. This website contains the exercises for Lab 9. One tab contains one exercise, so you can click and see the tabs and try the exercises at the same time! Enjoy!</p>
+</div>
+
+<div id="Multiplication Table" class="w3-container tab" style="display:none">
+<head>
+    <h1> Multiplication Table </h1>
+</head>
+<body>
+<form action="table.php" method="post">
+<p>Click this button to view the 100 X 100 multiplication table. It will take for few seconds to load the table, so wait.</p>
+<input type="submit" value = "Mutliplication Table">
+</form>
+</body>
+</div>
+
+<div id="Quiz" class="w3-container tab" style="display:none">
+<head>
+    <h1> Quiz </h1>
+</head>
+<body>
+<p>This quiz is designed to test students, who know the basic concepts of Calculus 1. Answer the 5 basic questions, submit your answers, and check your answers. You can reset the form if you are not okay with your selected answers.</p>
+<form action="quiz.php" method="post" id = "quiz">
+ <div id="quiz-form">
+                
+                    <h3>Question 1: Which concept is not introduced in Calculus 1?</h3>
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-A" value="Limits" />
+                        <label for="question-1-choice-A">A) Limts </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-B" value="Differentiation" />
+                        <label for="question-1-choice-B">B) Differentiation</label>
+                    </div>                   
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-C" value="Integration" />
+                        <label for="question-1-choice-C">C) Integration</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-choice" id="question-1-choice-D" value="Partial Differentiation" />
+                        <label for="question-1-choice-D">D) Partial Differentiation</label>
+                    </div>
+                    <h3>Question 2: What is the power rule of differentiation?</h3>    
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-A" value="x^(1-x)" />
+                        <label for="question-2-choice-A">A) x^(1-x)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-B" value="xm^(x-1)" />
+                        <label for="question-2-choice-B">B) xm^(x-1)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-C" value="x^(1000-20x)" />
+                        <label for="question-2-choice-C">C) x^(1000-20x)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-choice" id="question-2-choice-D" value="None of the above" />
+                        <label for="question-2-choice-D">D) None of the above</label>
+                    </div>
+                    <h3>Question 3: What is calculated for Integration?</h3>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-A" value="Area of a curve"/>
+                        <label for="question-3-choice-A">A) Area of a curve</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-B" value="Instantaneous rate of change" />
+                        <label for="question-3-choice-B">B) Instantaneous rate of change</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-C" value="Differentiation of numerator and denominator" />
+                        <label for="question-3-choice-C">C) Differentiation of numerator and denominator</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-choice" id="question-3-choice-D" value="Convergence or Divergence" />
+                        <label for="question-3-choice-D">D) Convergence or Divergence</label>
+                    </div>
+                    <h3>Question 4: What is the formula of the Fundamental Theorem of Calculus: Part 2?</h3>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-A" value="F(b-a)" />
+                        <label for="question-4-choice-A">A) F(b-a)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-B" value="F(b)-F(a)" />
+                        <label for="question-4-choice-B">B) F(b)-F(a)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-C" value="F(a)+20" />
+                        <label for="question-4-choice-C">C) F(a)+20</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-choice" id="question-4-choice-D" value="F(100)-F(a)" />
+                        <label for="question-4-choice-D">D) F(100)-F(a)</label>
+                    </div>
+                    <h3>Question 5: Which law is not a law of Limits?</h3>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-A" value="Sum Law" />
+                        <label for="question-5-choice-A">A) Sum Law</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-B" value="Constant Multiple Law" />
+                        <label for="question-5-choice-B">B) Constant Multiple Law</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-C" value="Factorial Law" />
+                        <label for="question-5-choice-C">C) Factorial Law</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-choice" id="question-5-choice-D" value="None of the above" />
+                        <label for="question-5-choice-D">D) None of the above</label>
+                    </div>     
+  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="myFunction2()" value="Reset">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("quiz").submit();
+}
+function myFunction2() {
+  document.getElementById("quiz").reset();
+}
+</script>
+
+</div>
+</body>
+</div>
+
+<div id="Web Store" class="w3-container tab" style="display:none">
+<head>
+    <h1> Web Store </h1>
+</head>
+<style>
+  div.a {
+  display: flex;
+  img-align : right;
+} 
+input[type="radio"] {
+  float: center;
+}
+</style>
+<p>Hello. Welcome to the Web Store. Enter your information to complete your order and get your receipt. You must enter your email, password, and number of quantities and select one of the shipping options! If you don't enter your information properly, then you will get an invalid receipt or an empty receipt.</p>
+  <li>If you enter the number of your quantities and don't enter your email or your password, then you will get a receipt without your email and password! Don't do it since it's very wrong.</li>
+  <li>If you enter negative values, then you will get an empty receipt. So, you must enter valid information to successfully get your receipt.</li>
+  <li>Even though you pick a shipping option and forget to enter the correct information, you will unfortunately get an empty receipt. So, be careful.</li>
+<div class="a">
+<img src="data:image/jpeg;base64,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" alt="Chair" style="width:104px;height:142px;">
+<img src="https://image.shutterstock.com/image-vector/flat-screen-tv-lcd-plasma-260nw-61245436.jpg" alt="TV" style="width:104px;height:142px;">
+<img src="https://st.depositphotos.com/1049810/1587/i/600/depositphotos_15875059-stock-photo-ice-cream.jpg" alt="Ice-Cream" style="width:104px;height:142px;">
+<form action="store.php" method="post" id = "store">
+ <b>Email and Password Information:</b><br>
+ Email: <input type="email" name="email"><br> 
+ Password: <input type="text" name="password"><br> 
+ <p></p>
+ <b>Quantity Information:</b><br>
+ Chair ($10 per chair) : <input type="number" name="number1" id = "num1" value = ""><br>
+ Television ($5 per TV) : <input type="number" name="number2" id = "num2" value = ""><br>
+ Ice-Cream ($15 per ice-cream) : <input type="number" name="number3" id = "num3" value = ""><br>
+ <p></p>
+ <b>Shipping and Handling Options:</b><br>
+  <input type="radio" id="option1" name="options" value="7 Days">
+  <label for="option1">Free 7 Day</label><br>
+  <div class="clear"></div>
+  <input type="radio" id="option2" name="options" value="Overnight">
+  <label for="option2">$50 Overnight</label><br>  
+  <div class="clear"></div>
+  <input type="radio" id="option3" name="options" value="3-Day">
+  <label for="option3">$5 3-Day</label><br><br>
+  <div class="clear"></div>
+ <input type="submit" onclick = "Submit()" value = "Submit">
+  <input type="reset" onclick="Reset()" value="Reset">
+</form>
+</div>
+<script>
+function Submit() {
+var num = parseInt(document.getElementById('num1').value);
+var num2 = parseInt(document.getElementById('num2').value);
+var num3 = parseInt(document.getElementById('num3').value);
+  if (num < 0 || num2 < 0 || num3 < 0)
+  {
+    alert("Quantity is negative! So, you will receieve an empty receipt. Try again!");
+    document.getElementById("store").reset();
+  } 
+  else if (num >= 0 || num2 >= 0 || num3 >= 0)
+  { 
+    alert("Quantity is positive or 0! So, you will successfully get your receipt! Have a nice day, and thanks for shopping!");
+    document.getElementById("store").submit();
+  }
+}
+function Reset() {
+  document.getElementById("store").reset();
+}
+</script>
+</div>
+
+<script>
+function Tab(tabName) {
+  var i;
+  var x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabName).style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
